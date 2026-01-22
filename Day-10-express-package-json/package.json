@@ -1,0 +1,16 @@
+{
+  "name": "day-10-express-package-json",
+  "version": "1.0.0",
+  "description": "This day marks the transition from pure Node.js to Express.js.\r The focus is on understanding `package.json` and setting up\r an Express project correctly.",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

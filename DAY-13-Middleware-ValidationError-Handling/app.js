@@ -6,13 +6,11 @@ app.use(express.json());
 const userRoutes = require("./routes/user.routes");
 const errorHandler = require("./middleware/error.middleware");
 
-app.use("/users", userRoutes);
+app.use("/",(req,res)=>{ 
+    res.send("<h1>welcome to home page friends <a href='http://localhost:3000/users'>click here to go /users</a></h1>")
+})
 
-/*
-|--------------------------------------------------------------------------
-| Global Error Middleware (Always last)
-|--------------------------------------------------------------------------
-*/
+app.use("/users", userRoutes);
 app.use(errorHandler);
 
 app.listen(3000, () => {
